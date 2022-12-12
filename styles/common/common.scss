@@ -1,0 +1,23 @@
+%sticky {
+  position: fixed;
+  opacity: 90%;
+  top: 0;
+  z-index: 1;
+}
+
+%flex-between {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+%flex-center {
+  @extend %flex-between;
+  justify-content: center;
+}
+
+%text-uppercase {
+  text-align: center;
+  text-transform: uppercase;
+}

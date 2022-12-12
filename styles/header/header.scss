@@ -1,0 +1,48 @@
+@import '../common/common';
+@import '../common/variables';
+@import '../common/mixins';
+
+.header {
+  @extend %sticky;
+  @extend %text-uppercase;
+  @include align-block('center');
+  @include adaptive('height', 100, 80, 0);
+  @include adaptive('font-size', 13, 12, 0);
+
+  background-color: $color-gray;
+  text-align: left;
+
+  .container {
+    @extend %flex-between;
+  }
+
+  .logo {
+    @include adaptive('font-size', 28, 20, 0);
+    width: 40%;
+
+    &__item {
+      @include blue($color-blue);
+      font-weight: 800;
+      color: $color-white;
+    }
+  }
+  .menu {
+    @extend %flex-between;
+    color: $color-white;
+    width: 40%;
+
+    &__item_link {
+      @include hover('link');
+    }
+
+    &__item_link.active {
+      color: $color-blue;
+    }
+  }
+
+  @include respond-below(sm) {
+    .logo, .menu {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@import '../common/common';
+@import '../common/variables';
+@import '../common/mixins';
+
+.error {
+  width: 100%;
+  color: $color-red;
+  font-size: 15px;
+  text-align: left;
+  margin-bottom: 15px;
+}

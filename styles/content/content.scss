@@ -1,0 +1,114 @@
+@import '../common/common';
+@import '../common/variables';
+@import '../common/mixins';
+
+.content {
+  @include align-block('center');
+  @include set-bg(nth($bgs, 2));
+  @include adaptive('padding', 100, 80, 1);
+
+  position: relative;
+  text-align: center;
+  color: $color-gray-lighter;
+
+  &__header {
+    @include adaptive('font-size', 28, 20, 0);
+    @include adaptive('margin-bottom', 30, 20, 0);
+    @include blue($color-blue-light);
+
+    text-transform: uppercase;
+    color: $color-white;
+  }
+
+  #form {
+    @extend %flex-between;
+
+    .field {
+      @include adaptive('margin-bottom', 30, 20, 0);
+      width: calc(100% / 3 - 20px);
+      text-align: left;
+
+      &_range {
+        width: calc(2 * (100% / 3) + 10px);
+      }
+
+      &__input {
+        @include adaptive('font-size', 18, 12, 0);
+        width: calc(100% - 26px);
+        padding: 12px;
+        border: $border-white;
+        border-radius: 3px;
+
+        &_text {
+          @extend %flex-center;
+          @extend %text-uppercase;
+
+          @extend .field__input;
+          background-color: $color-white;
+          color: $color-black-light;
+          cursor: pointer;
+
+          .active {
+            text-transform: lowercase;
+            color: $color-blue;
+            @include adaptive('font-size', 18, 12, 0);
+          }
+
+        }
+
+        &_file {
+          opacity: 0;
+          visibility: hidden;
+        }
+
+        &_icon {
+          margin-right: 10px;
+        }
+
+        &_range {
+          @extend .field__input;
+          @include range;
+        }
+      }
+
+      &__label {
+        @extend %flex-between;
+        @include adaptive('margin-bottom', 15, 5, 0);
+        @include adaptive('font-size', 18, 16, 0);
+
+        width: calc(100% - 26px);
+        color: $color-white;
+      }
+    }
+
+    .button {
+      @extend %text-uppercase;
+      @include button($color-blue-light, $color-white, $border-white, 4);
+      @include adaptive('font-size', 15, 14, 0);
+      @include adaptive('padding', 14, 8, 1);
+      @include adaptive('padding', 10, 8, 2);
+
+      margin: 0 auto;
+      width: calc(100% / 3 - 20px);
+      font-weight: 600;
+
+      @include hover('primary');
+    }
+
+    @include respond-below(sm) {
+      display: block;
+
+      .field {
+        width: 100%;
+
+        &__label {
+          width: unset;
+        }
+      }
+
+      .button {
+        width: calc(100% /2 - 15px);
+      }
+    }
+  }
+}

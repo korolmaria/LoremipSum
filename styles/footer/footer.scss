@@ -1,0 +1,78 @@
+@import '../common/common';
+@import '../common/variables';
+@import '../common/mixins';
+
+.footer {
+  @include align-block('center');
+  @include adaptive('font-size', 13, 14, 0);
+  @include adaptive('padding', 30, 5, 1);
+
+  color: $color-white;
+  font-weight: 400;
+  background-color: $color-violet;
+
+  .container, .group {
+    @extend %flex-between;
+  }
+
+  .group {
+    flex-basis: 70%;
+  }
+
+  .copyright,
+  .payment,
+  .contacts {
+    display: flex;
+  }
+
+  .payment {
+    width: 40%;
+    padding: 0 60px;
+    justify-content: space-between;
+    border-right: $border-white;
+    border-left: $border-white;
+
+    @include icon('payment', nth($icons-payment, 1));
+    @include icon('payment', nth($icons-payment, 2));
+    @include icon('payment', nth($icons-payment, 3));
+  }
+
+  .contacts {
+    width: 38%;
+    justify-content: space-between;
+
+    @include icon('contacts', nth($icons-contact, 1));
+    @include icon('contacts', nth($icons-contact, 2));
+  }
+
+  @include respond-below(xl) {
+    .container {
+      display: block;
+    }
+
+    .copyright {
+      margin-bottom: 20px;
+    }
+
+    .contacts, .payment {
+      display: block;
+      padding: 0;
+      border: none;
+    }
+
+    .contacts {
+      width: 55%;
+    }
+
+    .payment {
+      width: 45%;
+    }
+  }
+
+  @include respond-below(xxs) {
+    .contacts, .payment {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  }
+}

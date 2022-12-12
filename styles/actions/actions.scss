@@ -1,0 +1,23 @@
+@import '../common/common';
+@import '../common/variables';
+@import '../common/mixins';
+
+.actions {
+  &__item {
+    @extend %text-uppercase;
+    @include adaptive('padding', 15, 6, 0);
+    @include adaptive('width', 183, 100, 0);
+    @include adaptive('font-size', 13, 10, 0);
+    display: inline-block;
+
+    &_primary {
+      @include button($color-blue, $color-white, $border-white, 4);
+      @include hover('primary');
+    }
+
+    &_default {
+      @include button($color-white, $color-black-gray, $border-gray, 4);
+      @include hover('default');
+    }
+  }
+}

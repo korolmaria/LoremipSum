@@ -1,0 +1,49 @@
+@import '../common/common';
+@import '../common/variables';
+@import '../common/mixins';
+
+.schema {
+  display: flex;
+  justify-content: center;
+  color: $color-white;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include adaptive('margin', 80, 40, 1);
+
+  &__item {
+    position: relative;
+    padding: 10px;
+    width: 210px;
+
+    @include schema;
+  }
+
+  &__image {
+    max-height: 100%;
+  }
+
+  @include respond-below(md) {
+    display: block;
+
+    &__item {
+      box-sizing: border-box;
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: center;
+    }
+
+    &__image {
+      height: 75px;
+      width: 75px;
+      object-fit: contain;
+      margin-right: 20px;
+    }
+
+    &__text {
+      text-align: left;
+    }
+  }
+}
+

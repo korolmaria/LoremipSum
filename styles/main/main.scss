@@ -1,0 +1,43 @@
+@import '../common/common';
+@import '../common/variables';
+@import '../common/mixins';
+
+.main {
+  @include align-block('center');
+  @include set-bg(nth($bgs, 1));
+  @include adaptive('padding-top', 200, 100, 0);
+  @include adaptive('padding-bottom', 200, 40, 0);
+  @include adaptive('font-size', 20, 14, 0);
+
+  position: relative;
+
+  &__content {
+    @include adaptive('width', 600, 300, 0);
+  }
+
+  &__header {
+    @include adaptive('padding-bottom', 80, 40, 0);
+    @include adaptive('font-size', 48, 24, 0);
+    @include blue($color-blue-light);
+
+    color: $color-black;
+  }
+
+  &__text {
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+
+  &__list {
+    @include adaptive('padding-bottom', 80, 40, 0);
+    line-height: 24px;
+
+    .list__item::before {
+      @include adaptive('width', 24, 14, 0);
+      @include adaptive('height', 21, 12, 0);
+
+      content: "-";
+      display: inline-flex;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+@import "common/fonts";
+@import 'common/variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  border: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+}
+
+a {
+  color: $color-white;
+}
+
+input {
+  background-color: $color-white-light;
+  color: $color-black-light;
+  cursor: pointer;
+
+  &::-webkit-input-placeholder {
+    background-color: $color-white-light;
+    color: $color-black-light;
+  }
+
+  &::-moz-placeholder {
+    background-color: $color-white-light;
+    color: $color-black-light;
+  }
+
+  &:-ms-input-placeholder {
+    background-color: $color-white-light;
+    color: $color-black-light;
+  }
+}
+
+
+
+
