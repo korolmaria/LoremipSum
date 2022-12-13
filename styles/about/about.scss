@@ -2,7 +2,7 @@
 @import '../common/variables';
 @import '../common/mixins';
 
-.main {
+.about {
   @include align-block('center');
   @include set-bg(nth($bgs, 1));
   @include adaptive('padding-top', 200, 100, 0);
