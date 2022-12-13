@@ -5,16 +5,16 @@
 .schema {
   display: flex;
   justify-content: center;
-  color: $color-white;
   margin-right: auto;
   margin-left: auto;
+  color: $color-white;
 
   @include adaptive('margin', 80, 40, 1);
 
   &__item {
     position: relative;
-    padding: 10px;
     width: 215px;
+    padding: 10px;
 
     @include schema;
   }
@@ -31,18 +31,18 @@
     display: block;
 
     &__item {
+      display: flex;
+      align-items: center;
       box-sizing: border-box;
       width: 100%;
       height: auto;
-      display: flex;
-      align-items: center;
     }
 
     &__image {
-      height: 75px;
       width: 75px;
-      object-fit: contain;
+      height: 75px;
       margin-right: 20px;
+      object-fit: contain;
     }
 
     &__text {

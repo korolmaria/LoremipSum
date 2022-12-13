@@ -8,9 +8,7 @@
   @include align-block('center');
   @include adaptive('height', 100, 80, 0);
   @include adaptive('font-size', 13, 12, 0);
-
   background-color: $color-gray;
-  text-align: left;
 
   .container {
     @extend %flex-between;
@@ -19,17 +17,20 @@
   .logo {
     @include adaptive('font-size', 28, 20, 0);
     width: 40%;
+    text-align: left;
+
 
     &__item {
       @include blue($color-blue);
-      font-weight: 800;
       color: $color-white;
+      font-weight: 800;
     }
   }
+
   .menu {
     @extend %flex-between;
-    color: $color-white;
     width: 40%;
+    color: $color-white;
 
     &__item_link {
       @include hover('link');

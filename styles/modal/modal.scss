@@ -2,31 +2,31 @@
 @import '../common/mixins';
 
 #modal {
-  display: none;
   position: fixed;
-  justify-content: center;
-  align-items: center;
   top: 0;
   left: 0;
-  height: 100vh;
-  width: 100vw;
   z-index: 5;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
 
   .modal-window {
     @include adaptive('width', 700, 300, 0);
-    box-shadow: 0 5px 75px rgba(0,0,0,.5);
+    position: relative;
+    z-index: 7;
     background-color: $color-white;
     border: $border-white;
-    position: relative;
     border-radius: 7px;
-    z-index: 7;
+    box-shadow: 0 5px 75px rgb(0 0 0 / 50%);
 
     &__header {
       @include adaptive('font-size', 28, 16, 0);
       padding: 20px;
-      background-color: $color-blue-light;
       color: $color-white;
       text-align: center;
+      background-color: $color-blue-light;
     }
 
     &__body {
@@ -35,8 +35,8 @@
     }
 
     &__text {
-      font-size: 16px;
       margin-bottom: 10px;
+      font-size: 16px;
 
       &_bold {
         font-weight: 800;
@@ -45,9 +45,9 @@
 
     &__close {
       position: absolute;
-      color: $color-white;
       top: 10px;
       right: 10px;
+      color: $color-white;
       cursor: pointer;
     }
   }

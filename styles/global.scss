@@ -4,8 +4,8 @@
 * {
   margin: 0;
   padding: 0;
-  list-style-type: none;
   text-decoration: none;
+  list-style-type: none;
   border: none;
 }
 
@@ -14,8 +14,8 @@ html {
 }
 
 body {
-  font-family: "Lato", sans-serif;
   font-size: 18px;
+  font-family: Lato, sans-serif;
 }
 
 a {
@@ -23,23 +23,23 @@ a {
 }
 
 input {
-  background-color: $color-white-light;
   color: $color-black-light;
+  background-color: $color-white-light;
   cursor: pointer;
 
-  &::-webkit-input-placeholder {
-    background-color: $color-white-light;
+  &::input-placeholder {
     color: $color-black-light;
+    background-color: $color-white-light;
   }
 
-  &::-moz-placeholder {
-    background-color: $color-white-light;
+  &::placeholder {
     color: $color-black-light;
+    background-color: $color-white-light;
   }
 
-  &:-ms-input-placeholder {
-    background-color: $color-white-light;
+  &:input-placeholder {
     color: $color-black-light;
+    background-color: $color-white-light;
   }
 }
 

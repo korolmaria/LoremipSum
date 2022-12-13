@@ -6,7 +6,6 @@
   @include align-block('center');
   @include adaptive('font-size', 13, 14, 0);
   @include adaptive('padding', 30, 5, 1);
-
   color: $color-white;
   font-weight: 400;
   background-color: $color-violet;
@@ -26,9 +25,9 @@
   }
 
   .payment {
+    justify-content: space-between;
     width: 40%;
     padding: 0 60px;
-    justify-content: space-between;
     border-right: $border-white;
     border-left: $border-white;
 
@@ -38,8 +37,8 @@
   }
 
   .contacts {
-    width: 38%;
     justify-content: space-between;
+    width: 38%;
 
     @include icon('contacts', nth($icons-contact, 1));
     @include icon('contacts', nth($icons-contact, 2));
