@@ -27,10 +27,12 @@
     border-radius: 3px;
     overflow-Y: scroll;
     z-index: 2;
+    scrollbar-color: $color-blue $color-black-gray;
 
     &::-webkit-scrollbar {
-      width: 5px;
+      width: 7px;
       background-color: $color-violet;
+      color: $color-blue;
     }
 
     &::-webkit-scrollbar-thumb {

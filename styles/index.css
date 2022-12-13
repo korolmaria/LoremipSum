@@ -5,18 +5,18 @@
   z-index: 1;
 }
 
-.footer .container, .footer .group, .content #form .field__label, .content #form, .header .menu, .header .container, .content #form .field__input_text {
+.footer .container, .footer .group, .content .form .field__label, .content .form, .header .menu, .header .container, .content .form .field__input_text {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
 
-.content #form .field__input_text {
+.content .form .field__input_text {
   justify-content: center;
 }
 
-.content #form .button, .content #form .field__input_text, .actions__item, .header {
+.content .form .button, .content .form .field__input_text, .actions__item, .header {
   text-align: center;
   text-transform: uppercase;
 }
@@ -127,18 +127,18 @@ input:-ms-input-placeholder {
   z-index: 1;
 }
 
-.footer .container, .footer .group, .content #form .field__label, .content #form, .header .menu, .header .container, .content #form .field__input_text {
+.footer .container, .footer .group, .content .form .field__label, .content .form, .header .menu, .header .container, .content .form .field__input_text {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
 
-.content #form .field__input_text {
+.content .form .field__input_text {
   justify-content: center;
 }
 
-.content #form .button, .content #form .field__input_text, .actions__item, .header {
+.content .form .button, .content .form .field__input_text, .actions__item, .header {
   text-align: center;
   text-transform: uppercase;
 }
@@ -210,18 +210,18 @@ input:-ms-input-placeholder {
   z-index: 1;
 }
 
-.footer .container, .footer .group, .content #form .field__label, .content #form, .content #form .field__input_text, .header .container, .header .menu {
+.footer .container, .footer .group, .content .form .field__label, .content .form, .content .form .field__input_text, .header .container, .header .menu {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
 
-.content #form .field__input_text {
+.content .form .field__input_text {
   justify-content: center;
 }
 
-.content #form .button, .content #form .field__input_text, .actions__item, .header {
+.content .form .button, .content .form .field__input_text, .actions__item, .header {
   text-align: center;
   text-transform: uppercase;
 }
@@ -251,7 +251,7 @@ input:-ms-input-placeholder {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("../images/main_bg.svg") top/cover no-repeat;
+  background: url("../images/main_bg.png") top/cover no-repeat;
   z-index: -1;
 }
 @media (max-width: 1920px) {
@@ -333,18 +333,18 @@ input:-ms-input-placeholder {
   z-index: 1;
 }
 
-.footer .container, .footer .group, .content #form .field__label, .content #form, .content #form .field__input_text, .header .container, .header .menu {
+.footer .container, .footer .group, .content .form .field__label, .content .form, .content .form .field__input_text, .header .container, .header .menu {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
 
-.content #form .field__input_text {
+.content .form .field__input_text {
   justify-content: center;
 }
 
-.content #form .button, .content #form .field__input_text, .actions__item, .header {
+.content .form .button, .content .form .field__input_text, .actions__item, .header {
   text-align: center;
   text-transform: uppercase;
 }
@@ -398,18 +398,18 @@ input:-ms-input-placeholder {
   z-index: 1;
 }
 
-.footer .container, .footer .group, .content #form .field__label, .content #form, .content #form .field__input_text, .header .container, .header .menu {
+.footer .container, .footer .group, .content .form .field__label, .content .form, .content .form .field__input_text, .header .container, .header .menu {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
 
-.content #form .field__input_text {
+.content .form .field__input_text {
   justify-content: center;
 }
 
-.content #form .button, .content #form .field__input_text, .header, .actions__item {
+.content .form .button, .content .form .field__input_text, .header, .actions__item {
   text-align: center;
   text-transform: uppercase;
 }
@@ -419,7 +419,7 @@ input:-ms-input-placeholder {
   justify-content: center;
   width: 100%;
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 140px;
   position: relative;
   text-align: center;
   color: #BBBBBB;
@@ -440,24 +440,28 @@ input:-ms-input-placeholder {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("../images/content_bg.svg") top/cover no-repeat;
+  background: url("../images/content_bg.png") top/cover no-repeat;
   z-index: -1;
 }
 @media (max-width: 1920px) {
   .content {
     padding-top: calc(80px + 20 * ((100vw - 320px) / 1600));
-    padding-bottom: calc(80px + 20 * ((100vw - 320px) / 1600));
+  }
+}
+@media (max-width: 1920px) {
+  .content {
+    padding-bottom: calc(80px + 60 * ((100vw - 320px) / 1600));
   }
 }
 .content__header {
-  font-size: 28px;
+  font-size: 36px;
   margin-bottom: 30px;
   text-transform: uppercase;
   color: #FFFFFF;
 }
 @media (max-width: 1920px) {
   .content__header {
-    font-size: calc(20px + 8 * ((100vw - 320px) / 1600));
+    font-size: calc(20px + 16 * ((100vw - 320px) / 1600));
   }
 }
 @media (max-width: 1920px) {
@@ -469,20 +473,20 @@ input:-ms-input-placeholder {
   font-weight: 400;
   color: #3E9CDC;
 }
-.content #form .field {
+.content .form .field {
   margin-bottom: 30px;
   width: calc(33.3333333333% - 20px);
   text-align: left;
 }
 @media (max-width: 1920px) {
-  .content #form .field {
+  .content .form .field {
     margin-bottom: calc(20px + 10 * ((100vw - 320px) / 1600));
   }
 }
-.content #form .field_range {
+.content .form .field_range {
   width: calc(66.6666666667% + 10px);
 }
-.content #form .field__input, .content #form .select__header, .content #form .field__input_range, .content #form .field__input_text {
+.content .form .field__input, .content .form .select__header, .content .form .field__input_range, .content .form .field__input_text {
   font-size: 18px;
   width: calc(100% - 26px);
   padding: 12px;
@@ -490,58 +494,58 @@ input:-ms-input-placeholder {
   border-radius: 3px;
 }
 @media (max-width: 1920px) {
-  .content #form .field__input, .content #form .select__header, .content #form .field__input_range, .content #form .field__input_text {
+  .content .form .field__input, .content .form .select__header, .content .form .field__input_range, .content .form .field__input_text {
     font-size: calc(12px + 6 * ((100vw - 320px) / 1600));
   }
 }
-.content #form .field__input_text {
+.content .form .field__input_text {
   background-color: #FFFFFF;
   color: #272733;
   cursor: pointer;
 }
-.content #form .field__input_text .active {
+.content .form .field__input_text .active {
   text-transform: lowercase;
   color: #42A9ED;
   font-size: 18px;
 }
 @media (max-width: 1920px) {
-  .content #form .field__input_text .active {
+  .content .form .field__input_text .active {
     font-size: calc(12px + 6 * ((100vw - 320px) / 1600));
   }
 }
-.content #form .field__input_file {
+.content .form .field__input_file {
   opacity: 0;
   visibility: hidden;
 }
-.content #form .field__input_icon {
+.content .form .field__input_icon {
   margin-right: 10px;
 }
-.content #form .field__input_range {
+.content .form .field__input_range {
   height: 6px;
   appearance: none;
   padding: 0;
   cursor: pointer;
 }
 @media (max-width: 819px) {
-  .content #form .field__input_range {
+  .content .form .field__input_range {
     width: 100%;
   }
 }
-.content #form .field__input_range::-webkit-slider-runnable-track {
+.content .form .field__input_range::-webkit-slider-runnable-track {
   height: 6px;
   border: 1px solid #FFFFFF;
   background: #FFFFFF;
   color: #FFFFFF;
   border-radius: 6px/100%;
 }
-.content #form .field__input_range::-webkit-slider-thumb {
+.content .form .field__input_range::-webkit-slider-thumb {
   background: #42A9ED;
   border-radius: 50%;
   width: 24px;
   height: 24px;
   margin-top: -6px;
 }
-.content #form .field__input_range::-moz-range-thumb {
+.content .form .field__input_range::-moz-range-thumb {
   cursor: pointer;
   width: 20px;
   height: 20px;
@@ -549,12 +553,12 @@ input:-ms-input-placeholder {
   border: none;
   border-radius: 50%;
 }
-.content #form .field__input_range::-moz-range-track {
+.content .form .field__input_range::-moz-range-track {
   background: #FFFFFF;
   border-radius: 6px/100%;
   border: 1px solid #FFFFFF;
 }
-.content #form .field__input_range input[type=range]::-ms-thumb {
+.content .form .field__input_range input[type=range]::-ms-thumb {
   background-color: #42A9ED;
   border: none;
   width: 26px;
@@ -562,23 +566,26 @@ input:-ms-input-placeholder {
   border-radius: 6px/100%;
   color: #42A9ED;
 }
-.content #form .field__label {
+.content .form .field__label {
   margin-bottom: 15px;
   font-size: 18px;
   width: calc(100% - 26px);
   color: #FFFFFF;
 }
 @media (max-width: 1920px) {
-  .content #form .field__label {
+  .content .form .field__label {
     margin-bottom: calc(5px + 10 * ((100vw - 320px) / 1600));
   }
 }
 @media (max-width: 1920px) {
-  .content #form .field__label {
+  .content .form .field__label {
     font-size: calc(16px + 2 * ((100vw - 320px) / 1600));
   }
 }
-.content #form .button {
+.content .form .field__label_text {
+  width: 80%;
+}
+.content .form .button {
   background-color: #3E9CDC;
   color: #FFFFFF;
   border: 1px solid #FFFFFF;
@@ -588,41 +595,49 @@ input:-ms-input-placeholder {
   padding-bottom: 14px;
   padding-left: 10px;
   padding-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   margin: 0 auto;
   width: calc(33.3333333333% - 20px);
   font-weight: 600;
 }
 @media (max-width: 1920px) {
-  .content #form .button {
+  .content .form .button {
     font-size: calc(14px + 1 * ((100vw - 320px) / 1600));
   }
 }
 @media (max-width: 1920px) {
-  .content #form .button {
+  .content .form .button {
     padding-top: calc(8px + 6 * ((100vw - 320px) / 1600));
     padding-bottom: calc(8px + 6 * ((100vw - 320px) / 1600));
   }
 }
 @media (max-width: 1920px) {
-  .content #form .button {
+  .content .form .button {
     padding-left: calc(8px + 2 * ((100vw - 320px) / 1600));
     padding-right: calc(8px + 2 * ((100vw - 320px) / 1600));
   }
 }
-.content #form .button:hover {
+@media (max-width: 1920px) {
+  .content .form .button {
+    margin-top: calc(5px + 5 * ((100vw - 320px) / 1600));
+    margin-bottom: calc(5px + 5 * ((100vw - 320px) / 1600));
+  }
+}
+.content .form .button:hover {
   background-color: #0d517d;
 }
 @media (max-width: 819px) {
-  .content #form {
+  .content .form {
     display: block;
   }
-  .content #form .field {
+  .content .form .field {
     width: 100%;
   }
-  .content #form .field__label {
+  .content .form .field__label {
     width: unset;
   }
-  .content #form .button {
+  .content .form .button {
     width: calc(50% - 15px);
   }
 }
@@ -634,18 +649,18 @@ input:-ms-input-placeholder {
   z-index: 1;
 }
 
-.footer .container, .footer .group, .header .container, .header .menu, .content #form, .content #form .field__input_text, .content #form .field__label {
+.footer .container, .footer .group, .header .container, .header .menu, .content .form, .content .form .field__input_text, .content .form .field__label {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
 
-.content #form .field__input_text {
+.content .form .field__input_text {
   justify-content: center;
 }
 
-.header, .actions__item, .content #form .field__input_text, .content #form .button {
+.header, .actions__item, .content .form .field__input_text, .content .form .button {
   text-align: center;
   text-transform: uppercase;
 }
@@ -668,7 +683,7 @@ input:-ms-input-placeholder {
 .schema__item {
   position: relative;
   padding: 10px;
-  width: 210px;
+  width: 215px;
 }
 @media (min-width: 1220px) {
   .schema__item:not(:last-child)::after {
@@ -684,6 +699,9 @@ input:-ms-input-placeholder {
 }
 .schema__image {
   max-height: 100%;
+}
+.schema__text {
+  font-size: 16px;
 }
 @media (max-width: 919px) {
   .schema {
@@ -738,10 +756,12 @@ input:-ms-input-placeholder {
   border-radius: 3px;
   overflow-Y: scroll;
   z-index: 2;
+  scrollbar-color: #42A9ED #2A2B30;
 }
 .select__body::-webkit-scrollbar {
-  width: 5px;
+  width: 7px;
   background-color: #3D4050;
+  color: #42A9ED;
 }
 .select__body::-webkit-scrollbar-thumb {
   border-radius: 3px;
@@ -838,6 +858,8 @@ input:-ms-input-placeholder {
 }
 #modal.modal_open {
   display: flex;
+  background-color: #3D4050;
+  opacity: 0.95;
 }
 
 .header {
@@ -847,18 +869,18 @@ input:-ms-input-placeholder {
   z-index: 1;
 }
 
-.footer .container, .footer .group, .header .container, .header .menu, .content #form, .content #form .field__input_text, .content #form .field__label {
+.footer .container, .footer .group, .header .container, .header .menu, .content .form, .content .form .field__input_text, .content .form .field__label {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
 
-.content #form .field__input_text {
+.content .form .field__input_text {
   justify-content: center;
 }
 
-.header, .actions__item, .content #form .field__input_text, .content #form .button {
+.header, .actions__item, .content .form .field__input_text, .content .form .button {
   text-align: center;
   text-transform: uppercase;
 }
@@ -878,18 +900,18 @@ input:-ms-input-placeholder {
   z-index: 1;
 }
 
-.footer .container, .footer .group, .header .container, .header .menu, .content #form, .content #form .field__input_text, .content #form .field__label {
+.footer .container, .footer .group, .header .container, .header .menu, .content .form, .content .form .field__input_text, .content .form .field__label {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
 
-.content #form .field__input_text {
+.content .form .field__input_text {
   justify-content: center;
 }
 
-.header, .actions__item, .content #form .field__input_text, .content #form .button {
+.header, .actions__item, .content .form .field__input_text, .content .form .button {
   text-align: center;
   text-transform: uppercase;
 }

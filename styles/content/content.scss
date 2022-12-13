@@ -5,14 +5,15 @@
 .content {
   @include align-block('center');
   @include set-bg(nth($bgs, 2));
-  @include adaptive('padding', 100, 80, 1);
+  @include adaptive('padding-top', 100, 80, 0);
+  @include adaptive('padding-bottom', 140, 80, 0);
 
   position: relative;
   text-align: center;
   color: $color-gray-lighter;
 
   &__header {
-    @include adaptive('font-size', 28, 20, 0);
+    @include adaptive('font-size', 36, 20, 0);
     @include adaptive('margin-bottom', 30, 20, 0);
     @include blue($color-blue-light);
 
@@ -20,7 +21,7 @@
     color: $color-white;
   }
 
-  #form {
+  .form {
     @extend %flex-between;
 
     .field {
@@ -78,6 +79,10 @@
 
         width: calc(100% - 26px);
         color: $color-white;
+
+        &_text {
+          width: 80%;
+        }
       }
     }
 
@@ -87,6 +92,7 @@
       @include adaptive('font-size', 15, 14, 0);
       @include adaptive('padding', 14, 8, 1);
       @include adaptive('padding', 10, 8, 2);
+      @include adaptive('margin', 10, 5, 1);
 
       margin: 0 auto;
       width: calc(100% / 3 - 20px);

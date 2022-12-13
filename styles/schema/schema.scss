@@ -14,13 +14,17 @@
   &__item {
     position: relative;
     padding: 10px;
-    width: 210px;
+    width: 215px;
 
     @include schema;
   }
 
   &__image {
     max-height: 100%;
+  }
+
+  &__text {
+    font-size: 16px;
   }
 
   @include respond-below(md) {

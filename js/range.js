@@ -1,6 +1,6 @@
 const range = () => {
     const rangeElement = document.querySelector('.field__input_range');
-    const resultElement = document.querySelector('.field__result');
+    const resultElement = document.querySelector('.field__label_result');
 
     const setResult = (value) => resultElement.innerText = `${value} %`;
 

@@ -5,16 +5,16 @@ const validate = (name, type, email) => {
         name: /[a-zA-ZА-яЁё]/,
     }
 
-    if (!name.match(patterns.name)) errors = [...errors, 'введите корректное имя'];
+    if (type === "Выберите тип системы") errors = [...errors, 'Выберите тип системы'];
     if (!email.match(patterns.email)) errors = [...errors, 'введите корректный email'];
-    if (type === "Выберите тип системы") errors = [...errors, 'выберите тип системы'];
+    if (!name.match(patterns.name)) errors = [...errors, 'введите корректное имя'];
 
     return errors;
 }
 
 const submitData = () => {
-    const form = document.getElementById( "form" );
     const modal = document.getElementById("modal");
+    const form = document.querySelector( ".form" );
     const body = document.querySelector(".modal-window__body");
     const close = document.querySelector(".modal-window__close");
     const errorBlock = document.querySelector('.error');
