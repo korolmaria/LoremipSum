@@ -1,5 +1,7 @@
 @import "common/fonts";
-@import 'common/variables';
+@import "common/variables";
+@import "common/mixins";
+@import "common/extends";
 
 * {
   margin: 0;

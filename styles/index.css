@@ -1,3 +1,33 @@
+@font-face {
+  font-weight: 400;
+  font-family: Lato;
+  font-style: normal;
+  src: local("Lato"), url("/fonts/Lato/Lato-Regular.ttf") format("ttf");
+}
+@font-face {
+  font-weight: 500;
+  font-family: Lato;
+  font-style: normal;
+  src: local("Lato"), url("/fonts/Lato/Lato-Medium.ttf") format("ttf");
+}
+@font-face {
+  font-weight: 600;
+  font-family: Lato;
+  font-style: normal;
+  src: local("Lato"), url("/fonts/Lato/Lato-Semibold.ttf") format("ttf");
+}
+@font-face {
+  font-weight: 700;
+  font-family: Lato;
+  font-style: normal;
+  src: local("Lato"), url("/fonts/Lato/Lato-Bold.ttf") format("ttf");
+}
+@font-face {
+  font-weight: 800;
+  font-family: Lato;
+  font-style: normal;
+  src: local("Lato"), url("/fonts/Lato/Lato-Heavy.ttf") format("ttf");
+}
 .header {
   position: fixed;
   top: 0;
@@ -21,66 +51,6 @@
   text-transform: uppercase;
 }
 
-@font-face {
-  font-weight: 400;
-  font-family: Lato;
-  font-style: normal;
-  src: local("Lato"), url("/fonts/Lato/Lato-Regular.ttf") format("ttf");
-}
-@font-face {
-  font-weight: 500;
-  font-family: Lato;
-  font-style: normal;
-  src: local("Lato"), url("/fonts/Lato/Lato-Medium.ttf") format("ttf");
-}
-@font-face {
-  font-weight: 600;
-  font-family: Lato;
-  font-style: normal;
-  src: local("Lato"), url("/fonts/Lato/Lato-Semibold.ttf") format("ttf");
-}
-@font-face {
-  font-weight: 700;
-  font-family: Lato;
-  font-style: normal;
-  src: local("Lato"), url("/fonts/Lato/Lato-Bold.ttf") format("ttf");
-}
-@font-face {
-  font-weight: 800;
-  font-family: Lato;
-  font-style: normal;
-  src: local("Lato"), url("/fonts/Lato/Lato-Heavy.ttf") format("ttf");
-}
-@font-face {
-  font-weight: 400;
-  font-family: Lato;
-  font-style: normal;
-  src: local("Lato"), url("/fonts/Lato/Lato-Regular.ttf") format("ttf");
-}
-@font-face {
-  font-weight: 500;
-  font-family: Lato;
-  font-style: normal;
-  src: local("Lato"), url("/fonts/Lato/Lato-Medium.ttf") format("ttf");
-}
-@font-face {
-  font-weight: 600;
-  font-family: Lato;
-  font-style: normal;
-  src: local("Lato"), url("/fonts/Lato/Lato-Semibold.ttf") format("ttf");
-}
-@font-face {
-  font-weight: 700;
-  font-family: Lato;
-  font-style: normal;
-  src: local("Lato"), url("/fonts/Lato/Lato-Bold.ttf") format("ttf");
-}
-@font-face {
-  font-weight: 800;
-  font-family: Lato;
-  font-style: normal;
-  src: local("Lato"), url("/fonts/Lato/Lato-Heavy.ttf") format("ttf");
-}
 * {
   margin: 0;
   padding: 0;
@@ -118,29 +88,6 @@ input::placeholder {
 input:input-placeholder {
   color: #272733;
   background-color: #dfdfe0;
-}
-
-.header {
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  opacity: 0.9;
-}
-
-.footer .container, .footer .group, .order .form .field__label, .order .form, .header .menu, .header .container, .order .form .field__input_text {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.order .form .field__input_text {
-  justify-content: center;
-}
-
-.order .form .button, .order .form .field__input_text, .actions__item, .header {
-  text-align: center;
-  text-transform: uppercase;
 }
 
 .header {
@@ -201,29 +148,6 @@ input:input-placeholder {
   .header .logo, .header .menu {
     width: 100%;
   }
-}
-
-.header {
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  opacity: 0.9;
-}
-
-.footer .container, .footer .group, .order .form .field__label, .order .form, .order .form .field__input_text, .header .container, .header .menu {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.order .form .field__input_text {
-  justify-content: center;
-}
-
-.order .form .button, .order .form .field__input_text, .actions__item, .header {
-  text-align: center;
-  text-transform: uppercase;
 }
 
 .about {
@@ -327,29 +251,6 @@ input:input-placeholder {
   }
 }
 
-.header {
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  opacity: 0.9;
-}
-
-.footer .container, .footer .group, .order .form .field__label, .order .form, .order .form .field__input_text, .header .container, .header .menu {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.order .form .field__input_text {
-  justify-content: center;
-}
-
-.order .form .button, .order .form .field__input_text, .actions__item, .header {
-  text-align: center;
-  text-transform: uppercase;
-}
-
 .actions__item {
   padding: 15px;
   width: 183px;
@@ -390,29 +291,6 @@ input:input-placeholder {
   background-color: #BBB;
   color: #FFF;
   border-color: #FFF;
-}
-
-.header {
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  opacity: 0.9;
-}
-
-.footer .container, .footer .group, .order .form .field__label, .order .form, .order .form .field__input_text, .header .container, .header .menu {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.order .form .field__input_text {
-  justify-content: center;
-}
-
-.order .form .button, .order .form .field__input_text, .header, .actions__item {
-  text-align: center;
-  text-transform: uppercase;
 }
 
 .order {
@@ -643,29 +521,6 @@ input:input-placeholder {
   }
 }
 
-.header {
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  opacity: 0.9;
-}
-
-.footer .container, .footer .group, .header .container, .header .menu, .order .form, .order .form .field__input_text, .order .form .field__label {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.order .form .field__input_text {
-  justify-content: center;
-}
-
-.header, .actions__item, .order .form .field__input_text, .order .form .button {
-  text-align: center;
-  text-transform: uppercase;
-}
-
 .schema {
   display: flex;
   justify-content: center;
@@ -863,58 +718,12 @@ input:input-placeholder {
   opacity: 0.95;
 }
 
-.header {
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  opacity: 0.9;
-}
-
-.footer .container, .footer .group, .header .container, .header .menu, .order .form, .order .form .field__input_text, .order .form .field__label {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.order .form .field__input_text {
-  justify-content: center;
-}
-
-.header, .actions__item, .order .form .field__input_text, .order .form .button {
-  text-align: center;
-  text-transform: uppercase;
-}
-
 .error {
   width: 100%;
   margin-bottom: 15px;
   color: red;
   font-size: 15px;
   text-align: left;
-}
-
-.header {
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  opacity: 0.9;
-}
-
-.footer .container, .footer .group, .header .container, .header .menu, .order .form, .order .form .field__input_text, .order .form .field__label {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.order .form .field__input_text {
-  justify-content: center;
-}
-
-.header, .actions__item, .order .form .field__input_text, .order .form .button {
-  text-align: center;
-  text-transform: uppercase;
 }
 
 .footer {

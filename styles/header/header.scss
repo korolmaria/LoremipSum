@@ -1,7 +1,3 @@
-@import '../common/common';
-@import '../common/variables';
-@import '../common/mixins';
-
 .header {
   @extend %sticky;
   @extend %text-uppercase;

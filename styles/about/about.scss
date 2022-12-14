@@ -1,7 +1,3 @@
-@import '../common/common';
-@import '../common/variables';
-@import '../common/mixins';
-
 .about {
   @include align-block('center');
   @include set-bg(nth($bgs, 1));

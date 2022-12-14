@@ -1,7 +1,3 @@
-@import '../common/common';
-@import '../common/variables';
-@import '../common/mixins';
-
 .actions {
   &__item {
     @extend %text-uppercase;
