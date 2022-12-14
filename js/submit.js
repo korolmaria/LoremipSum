@@ -22,8 +22,6 @@ const submitData = () => {
     form.addEventListener( "submit", function ( e ) {
         e.preventDefault();
         errorBlock.innerText = '';
-        document.body.style.setProperty('overflow', 'hidden');
-
 
         const name = document.querySelector("input[name='name']").value;
         const email = document.querySelector("input[name='email']").value;
@@ -33,7 +31,10 @@ const submitData = () => {
 
         const errors = validate(name, type, email);
 
-        if (errors.length > 0) errorBlock.innerText = errors.join(', ');
+        if (errors.length > 0) {
+            document.body.style.setProperty('overflow', 'scroll');
+            errorBlock.innerText = errors.join(', ');
+        }
 
         if (errors.length === 0) {
             body.innerHTML = `
@@ -44,12 +45,13 @@ const submitData = () => {
             <p class="modal-window__text"><span class="modal-window__text_bold">Загружен файл</span> - ${file}</p>
         `;
             modal.classList.add('modal_open');
+            document.body.style.setProperty('overflow', 'hidden');
         }
     } );
 
     close.addEventListener('click', (e) => {
         e.preventDefault();
-        document.body.style.setProperty('overflow', 'auto');
+        document.body.style.setProperty('overflow', 'scroll');
         modal.classList.remove('modal_open');
     })
 }
