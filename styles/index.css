@@ -673,7 +673,7 @@ input:input-placeholder {
   position: relative;
   z-index: 7;
   background-color: #FFF;
-  border: 1px solid #FFF;
+  border: 10px solid #FFF;
   border-radius: 7px;
   box-shadow: 0 5px 75px rgba(0, 0, 0, 0.5);
 }
