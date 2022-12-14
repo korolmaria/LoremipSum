@@ -14,6 +14,7 @@ const validate = (name, type, email) => {
 
 const submitData = () => {
     const modal = document.getElementById("modal");
+    const overflow = document.getElementById("overflow");
     const form = document.querySelector( ".form" );
     const body = document.querySelector(".modal-window__body");
     const close = document.querySelector(".modal-window__close");
@@ -37,12 +38,14 @@ const submitData = () => {
         }
 
         if (errors.length === 0) {
+            overflow.style.setProperty("display", "block");
+
             body.innerHTML = `
             <p class="modal-window__text"><span class="modal-window__text_bold">Имя</span> - ${name}</p>
             <p class="modal-window__text"><span class="modal-window__text_bold">Емэйл</span> - ${email}</p>
             <p class="modal-window__text"><span class="modal-window__text_bold">Тип системы</span> - ${type}</p>
             <p class="modal-window__text"><span class="modal-window__text_bold">Количество</span> - ${range} %</p>
-            <p class="modal-window__text"><span class="modal-window__text_bold">Загружен файл</span> - ${file}</p>
+            <p class="modal-window__text"><span class="modal-window__text_bold">Загружен файл</span> - ${file ? file : '0 ед.'}</p>
         `;
             modal.classList.add('modal_open');
             document.body.style.setProperty('overflow', 'hidden');
@@ -52,6 +55,7 @@ const submitData = () => {
     close.addEventListener('click', (e) => {
         e.preventDefault();
         document.body.style.setProperty('overflow', 'scroll');
+        overflow.style.setProperty("display", "none");
         modal.classList.remove('modal_open');
     })
 }

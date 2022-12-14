@@ -657,21 +657,37 @@ input:input-placeholder {
   background-color: #3D4050;
 }
 
-#modal {
+#overflow {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 5;
   display: none;
-  align-items: center;
-  justify-content: center;
   width: 100vw;
   height: 100vh;
+  background-color: #3D4050;
+  opacity: 0.75;
+}
+
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+#modal.modal_open {
+  z-index: 6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #modal .modal-window {
   width: 700px;
   position: relative;
-  z-index: 7;
+  box-sizing: border-box;
+  height: max-content;
   background-color: #FFF;
   border: 10px solid #FFF;
   border-radius: 7px;
@@ -679,7 +695,7 @@ input:input-placeholder {
 }
 @media (max-width: 1920px) {
   #modal .modal-window {
-    width: calc(300px + 400 * ((100vw - 320px) / 1600));
+    width: calc(290px + 410 * ((100vw - 320px) / 1600));
   }
 }
 #modal .modal-window__header {
@@ -695,7 +711,7 @@ input:input-placeholder {
   }
 }
 #modal .modal-window__body {
-  padding: 30px;
+  padding: 20px;
   color: #6F6D7B;
 }
 #modal .modal-window__text {
@@ -711,11 +727,6 @@ input:input-placeholder {
   right: 10px;
   color: #FFF;
   cursor: pointer;
-}
-#modal.modal_open {
-  display: flex;
-  background-color: #3D4050;
-  opacity: 0.95;
 }
 
 .error {
