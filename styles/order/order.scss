@@ -14,7 +14,7 @@
   &__header {
     @include adaptive('font-size', 36, 20, 0);
     @include adaptive('margin-bottom', 30, 20, 0);
-    @include blue($color-blue-light);
+    @include blue($color-blue-light, 800);
     color: $color-white;
     text-transform: uppercase;
   }
@@ -52,7 +52,6 @@
             text-transform: lowercase;
             @include adaptive('font-size', 18, 12, 0);
           }
-
         }
 
         &_file {

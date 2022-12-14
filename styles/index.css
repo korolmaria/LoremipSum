@@ -270,17 +270,18 @@ input:input-placeholder {
   }
 }
 .about__content {
-  width: 600px;
+  width: 780px;
 }
 @media (max-width: 1920px) {
   .about__content {
-    width: calc(300px + 300 * ((100vw - 320px) / 1600));
+    width: calc(300px + 480 * ((100vw - 320px) / 1600));
   }
 }
 .about__header {
   padding-bottom: 80px;
   font-size: 48px;
   color: #000;
+  font-weight: 800;
 }
 @media (max-width: 1920px) {
   .about__header {
@@ -294,7 +295,7 @@ input:input-placeholder {
 }
 .about__header_blue {
   color: #3E9CDC;
-  font-weight: 400;
+  font-weight: 700;
 }
 .about__text {
   margin-bottom: 10px;
@@ -471,7 +472,7 @@ input:input-placeholder {
 }
 .order__header_blue {
   color: #3E9CDC;
-  font-weight: 400;
+  font-weight: 800;
 }
 .order .form .field {
   margin-bottom: 30px;

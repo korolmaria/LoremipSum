@@ -102,10 +102,10 @@ $minWidth: 320;
   }
 }
 
-@mixin blue($color) {
+@mixin blue($color, $weight) {
   &_blue {
     color: $color;
-    font-weight: 400;
+    font-weight: $weight;
   }
 }
 

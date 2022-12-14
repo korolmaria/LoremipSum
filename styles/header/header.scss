@@ -21,7 +21,7 @@
 
 
     &__item {
-      @include blue($color-blue);
+      @include blue($color-blue, 400);
       color: $color-white;
       font-weight: 800;
     }
